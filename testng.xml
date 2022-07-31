@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Sawgger pet Test Suite" parallel="classes" thread-count="3" verbose="0">
+    <listeners>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="PetCreation">
+        <classes>
+            <class name="Cases.PetCreationTest">
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="PetStoreUser">
+        <classes>
+            <class name="Cases.PetStoreUserTests">
+            </class>
+        </classes>
+    </test>
+</suite>

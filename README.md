@@ -9,7 +9,7 @@ TechStack:
 4.Maven 
 5.apache log4j
 6.Lombok
-7.docker (for report portal conatiner )
+7.docker- for running report portal container
 
 
 For TestDataGeneration have used Java Faker API

@@ -2,13 +2,14 @@
 
 This is project for sawgger pet-store  build using restassured and testng as testing framwork 
 TechStack:
-RestAssured
-Java
-TestNg 
-Maven 
-apache log4j
-Lombok
-docker (for report portal conatiner )
+
+1.RestAssured
+2.Java
+3.TestNg 
+4.Maven 
+5.apache log4j
+6.Lombok
+7.docker (for report portal conatiner )
 
 
 For TestDataGeneration have used Java Faker API

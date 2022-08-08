@@ -32,7 +32,7 @@
 
 
                     <suiteXmlFiles>
-                        <xmlFile>resources/testng.xml</xmlFile>
+                        <xmlFile>src/main/resources/testng.xml</xmlFile>
 
                     </suiteXmlFiles>
                     <!-- ADD working directory to get TestNG know we to find suite files -->
@@ -52,11 +52,6 @@
     <dependencies>
         <!--Testing -->
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.1.0</version>
-        </dependency>
-        <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
             <version>3.0</version>
@@ -70,6 +65,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.epam.reportportal/commons-model -->
+        <dependency>
+            <groupId>com.epam.reportportal</groupId>
+            <artifactId>commons-model</artifactId>
+            <version>5.7.0</version>
+        </dependency>
 
         <!--End Testing -->
         <!-- Selenium Drivers (all the desired browser drivers here) -->
@@ -166,6 +167,8 @@
             <artifactId>logger-java-logback</artifactId>
             <version>5.1.2</version>
         </dependency>
+
+
 
         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>

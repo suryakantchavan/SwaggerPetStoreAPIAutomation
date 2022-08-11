@@ -23,7 +23,8 @@ public class ApplicationConstants {
     public enum petStatus {
         AVAILABLE("available"),
         SOLD("sold"),
-        PENDING("pending");
+        PENDING("pending"),
+        INVALID("invalid");
 
         private final String petStatus;
         petStatus(String petStatus) {

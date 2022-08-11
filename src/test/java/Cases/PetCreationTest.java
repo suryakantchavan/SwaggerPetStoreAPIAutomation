@@ -10,6 +10,7 @@ import SwaggerPetStoreAPI.dto.Response.PetCreationResponse;
 import Util.FakerUtil;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -86,5 +87,13 @@ public class PetCreationTest {
         petNameList.contains(petName), "created pet name given status should be present");
 
     softAssert.assertAll();
+  }
+
+  @Test(priority = 2)
+  public void getPetForInvalidStatus(Method method) {
+    logger.info("test execution has started for method " + method.getName());
+    GetPetStatusResponse[] response =
+        petLib.getPetStatusResponse(ApplicationConstants.petStatus.INVALID.getPetStatus());
+    Assert.assertEquals(response.length, 0, "for invalid status response should be empty array");
   }
 }

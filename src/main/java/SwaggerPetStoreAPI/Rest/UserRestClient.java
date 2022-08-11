@@ -3,6 +3,7 @@ package SwaggerPetStoreAPI.Rest;
 import SwaggerPetStoreAPI.SpecificationBuilder.SpecBuilder;
 import SwaggerPetStoreAPI.dto.Response.CreateUserResponse;
 import SwaggerPetStoreAPI.dto.Response.GetUserResponse;
+import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
@@ -21,6 +22,9 @@ public class UserRestClient {
     }
 
     /**
+     *
+     * @param user
+     * @param path
      * @return
      */
     public static GetUserResponse doGet(String user,String path) {
@@ -31,6 +35,10 @@ public class UserRestClient {
 
 
     /**
+     *
+     * @param obj
+     * @param user
+     * @param path
      * @return
      */
     public static GetUserResponse doPut(Object obj,String user,String path){
@@ -38,6 +46,5 @@ public class UserRestClient {
                 .put(String.format(path, user)).then().extract().response().as(GetUserResponse.class);
 
     }
-
 
 }

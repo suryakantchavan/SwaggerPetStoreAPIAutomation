@@ -6,6 +6,7 @@ import SwaggerPetStoreAPI.dto.Request.UserRequest;
 import SwaggerPetStoreAPI.dto.Response.CreateUserResponse;
 import SwaggerPetStoreAPI.dto.Response.GetUserResponse;
 import SwaggerPetStoreAPI.dto.ApplicationConstants;
+import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -60,11 +61,13 @@ public class UserLib {
     /**
      *
      * @param obj
+     * @param name
      * @return
      */
     public GetUserResponse updateUserInfo(Object obj,String name) {
         GetUserResponse response= UserRestClient.doPut(obj,name, ApplicationConstants.GET_OR_UPDATE_USER_PATH);
         return response;
     }
+
 
 }

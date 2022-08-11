@@ -11,7 +11,8 @@ public class ApplicationConstants {
     public static final String BASE_PATH="/v2";
 
     public static final String CREATE_USER_RESPONSE_OK="ok";
-    public static final String CREATE_USER_RESPONSE_TYPE="unknown";
+    public static final String 
+            CREATE_USER_RESPONSE_TYPE="unknown";
     public static final Integer CREATE_USER_STATUS_CODE=200;
     public static final Integer SERVER_ERROR=500;
     public static final String CREATE_USER_INVALID_PAYLOAD_RESPONSE_MESSAGE="something bad happened";

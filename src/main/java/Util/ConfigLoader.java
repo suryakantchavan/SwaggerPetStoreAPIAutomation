@@ -29,5 +29,19 @@ public class ConfigLoader {
             return baseUrl;
         else throw new RuntimeException("couldn't fetch base url");
     }
+
+
+    public String getBaseUrl(String value) {
+
+    String baseUrl = properties.getProperty(value);
+
+    if (baseUrl != null) {
+      return baseUrl;
+    } else {
+      throw new RuntimeException("couldn't fetch url");
+    }
+  }
 }
+
+
 

@@ -19,4 +19,12 @@
             </class>
         </classes>
     </test>
+
+    <test verbose="2" preserve-order="true"
+          name="userSchemaValidation">
+        <classes>
+            <class name="Cases.UserResponseSchemaValidationTest">
+            </class>
+        </classes>
+    </test>
 </suite>

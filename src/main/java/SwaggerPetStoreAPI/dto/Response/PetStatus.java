@@ -18,7 +18,7 @@ import java.util.List;
 @Jacksonized
 @ToString
 @Generated("jsonschema2pojo")
-public class TopClass {
+public class PetStatus {
 
     @JsonProperty("getPetStatusResponses")
     private List<GetPetStatusResponse> getPetStatusResponses=null ;
